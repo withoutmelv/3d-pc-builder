@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "loader": "Three.js GLTFLoader",
+  "meshes": 38,
+  "triangles": 19828,
+  "fans": 2,
+  "independentRotors": 2,
+  "anchors": [
+    "cooler_ANCHOR_airflow",
+    "cooler_ANCHOR_thermal_contact"
+  ],
+  "clips": 4,
+  "slotCovers": 0,
+  "sizeMetres": [
+    0.15015000104904175,
+    0.15422499916166998,
+    0.1363500122223112
+  ],
+  "keyGeometryRaycast": false,
+  "noExternalTextures": true,
+  "websitePerformanceTested": false,
+  "blendReopened": true,
+  "blendStandardDocument": true
+}

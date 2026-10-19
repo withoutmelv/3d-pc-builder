@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "loader": "Three.js GLTFLoader",
+  "meshes": 53,
+  "triangles": 38173,
+  "fans": 1,
+  "independentRotors": 1,
+  "anchors": [
+    "psu_ANCHOR_12V2x6",
+    "psu_ANCHOR_CPU_PCIE_1",
+    "psu_ANCHOR_CPU_PCIE_2",
+    "psu_ANCHOR_CPU_PCIE_3",
+    "psu_ANCHOR_MB_10pin",
+    "psu_ANCHOR_MB_18pin",
+    "psu_ANCHOR_psu_mount",
+    "psu_ANCHOR_SATA_1",
+    "psu_ANCHOR_SATA_2",
+    "psu_ANCHOR_SATA_3"
+  ],
+  "clips": 0,
+  "slotCovers": 0,
+  "sizeMetres": [
+    0.1503000120865181,
+    0.0865350030362606,
+    0.16841000326404626
+  ],
+  "keyGeometryRaycast": false,
+  "noExternalTextures": true,
+  "websitePerformanceTested": false,
+  "blendReopened": true,
+  "blendStandardDocument": true
+}

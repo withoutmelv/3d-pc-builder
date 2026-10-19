@@ -1,0 +1,34 @@
+{
+  "model": "Samsung 990 EVO 1TB M.2 2280",
+  "created": "2026-09-20",
+  "workflow": "Blender 5.2 + local blender-mcp execute_blender_code",
+  "upstream_commit": "6f992ffbca3cb715d111fc640b737b808632273c",
+  "units": "metres",
+  "blender_bounds_mm": [
+    [
+      -43.69999694824219,
+      -11.0,
+      -0.5500002503395081
+    ],
+    [
+      40.0,
+      11.0,
+      1.8600001335144043
+    ]
+  ],
+  "mesh_count": 13,
+  "triangles": 3348,
+  "glb_bytes": 171360,
+  "groups": [
+    "ROOT",
+    "Body",
+    "ANCHOR_m_key",
+    "ANCHOR_mount"
+  ],
+  "notes": [
+    "80 × 22 mm PCB; package thickness approximated from photographs.",
+    "M-key and half-round tail are physical geometry. Label is distinct from removable motherboard thermal-pad film.",
+    "Brand text is reconstructed geometry; regulatory symbols and serial numbers are intentionally omitted."
+  ],
+  "website_integrated": false
+}

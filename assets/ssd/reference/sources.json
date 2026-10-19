@@ -1,0 +1,14 @@
+{
+  "id": "ssd",
+  "name": "03 · SSD",
+  "model": "Samsung 990 EVO 1TB · M.2 2280",
+  "source": "https://www.samsung.com/sec/memory-storage/990-evo-ssd/MZ-V9E1T0BW/",
+  "status": "型号已确认；已制作首版模型",
+  "note": "官方页面给出正面、背面及左右斜视。细薄侧面厚度需结合数据表，图片不包含标准侧面投影。",
+  "images": [
+    "https://images.samsung.com/kdp/goods/2024/01/10/652c917d-f344-43a3-b8ea-e46792684e84.png?$Q90_1920_1280_F_JPG$",
+    "https://images.samsung.com/kdp/goods/2024/01/10/323f4cb0-54c8-4539-ae97-0588408827a1.png?$Q90_1920_1280_F_JPG$",
+    "https://images.samsung.com/kdp/goods/2024/01/10/72bda001-f4f4-4f7a-9a3d-0707974271a0.png?$Q90_1920_1280_F_JPG$",
+    "https://images.samsung.com/kdp/goods/2024/01/10/2a3b155c-36b2-47a1-814f-0b3e3d00f03a.png?$Q90_1920_1280_F_JPG$"
+  ]
+}

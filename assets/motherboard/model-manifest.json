@@ -1,0 +1,228 @@
+{
+  "mesh_objects": 203,
+  "groups": 113,
+  "triangles": 101478,
+  "glb_bytes": 5495532,
+  "anchors": {
+    "ANCHOR_mount_01": [
+      -112,
+      146,
+      0
+    ],
+    "ANCHOR_mount_02": [
+      -39,
+      146,
+      0
+    ],
+    "ANCHOR_mount_03": [
+      117,
+      146,
+      0
+    ],
+    "ANCHOR_mount_04": [
+      -112,
+      -10,
+      0
+    ],
+    "ANCHOR_mount_05": [
+      45,
+      -10,
+      0
+    ],
+    "ANCHOR_mount_06": [
+      117,
+      -10,
+      0
+    ],
+    "ANCHOR_mount_07": [
+      -112,
+      -142,
+      0
+    ],
+    "ANCHOR_mount_08": [
+      45,
+      -142,
+      0
+    ],
+    "ANCHOR_mount_09": [
+      117,
+      -142,
+      0
+    ],
+    "ANCHOR_cpu": [
+      7,
+      62,
+      4.6
+    ],
+    "ANCHOR_cooler_Upper_-20": [
+      -20,
+      110,
+      2
+    ],
+    "ANCHOR_cooler_Upper_34": [
+      34,
+      110,
+      2
+    ],
+    "ANCHOR_cooler_Lower_-20": [
+      -20,
+      14,
+      2
+    ],
+    "ANCHOR_cooler_Lower_34": [
+      34,
+      14,
+      2
+    ],
+    "ANCHOR_ram_A1": [
+      65,
+      62,
+      7
+    ],
+    "ANCHOR_ram_A2": [
+      75,
+      62,
+      7
+    ],
+    "ANCHOR_ram_B1": [
+      85,
+      62,
+      7
+    ],
+    "ANCHOR_ram_B2": [
+      95,
+      62,
+      7
+    ],
+    "ANCHOR_gpu_1": [
+      -24,
+      -30,
+      6
+    ],
+    "ANCHOR_gpu_2": [
+      -24,
+      -134,
+      6
+    ],
+    "ANCHOR_m2_1": [
+      16,
+      -7,
+      3.8
+    ],
+    "ANCHOR_m2_2": [
+      24,
+      -64,
+      3.8
+    ],
+    "ANCHOR_m2_3": [
+      24,
+      -104,
+      3.8
+    ],
+    "ANCHOR_m2_4": [
+      100,
+      -71,
+      3.8
+    ],
+    "ANCHOR_atx24": [
+      115,
+      58,
+      10.5
+    ],
+    "ANCHOR_eps_1": [
+      -75,
+      148,
+      10.5
+    ],
+    "ANCHOR_eps_2": [
+      -55,
+      148,
+      10.5
+    ],
+    "ANCHOR_CPU_FAN": [
+      74,
+      142,
+      5
+    ],
+    "ANCHOR_CPU_OPT": [
+      91,
+      142,
+      5
+    ],
+    "ANCHOR_AIO_PUMP": [
+      113,
+      118,
+      5
+    ],
+    "ANCHOR_CHA_FAN1": [
+      112,
+      16,
+      5
+    ],
+    "ANCHOR_CHA_FAN2": [
+      -63,
+      -146,
+      5
+    ],
+    "ANCHOR_CHA_FAN3": [
+      37,
+      -147,
+      5
+    ],
+    "ANCHOR_F_PANEL": [
+      99,
+      -147,
+      5
+    ],
+    "ANCHOR_USB_2_A": [
+      -25,
+      -147,
+      5
+    ],
+    "ANCHOR_USB_2_B": [
+      -7,
+      -147,
+      5
+    ],
+    "ANCHOR_USB_2_C": [
+      12,
+      -147,
+      5
+    ],
+    "ANCHOR_HD_AUDIO": [
+      -93,
+      -147,
+      5
+    ],
+    "ANCHOR_ARGB_5V": [
+      53,
+      -147,
+      5
+    ],
+    "ANCHOR_USB_3_HEADER": [
+      111,
+      24,
+      5
+    ],
+    "ANCHOR_sata_1": [
+      126,
+      -54,
+      6
+    ],
+    "ANCHOR_sata_2": [
+      126,
+      -68,
+      6
+    ]
+  },
+  "unit": "metre",
+  "blender_axes": "+X right, +Y top, +Z component side",
+  "gltf_axes": "+X right, -Z top, +Y component side",
+  "anchors_unit": "millimetre in Blender coordinates",
+  "review_images": [
+    "hero.png",
+    "front.png",
+    "back.png",
+    "exploded.png"
+  ]
+}

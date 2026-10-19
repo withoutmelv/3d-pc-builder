@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "loader": "Project Three.js GLTFLoader",
+  "meshes": 16,
+  "triangles": 62900,
+  "anchorCoordinatesChecked": 3,
+  "substrateNotchesChecked": 2,
+  "embeddedReferenceImages": 0,
+  "glbBytes": 3091428,
+  "boundsMetres": {
+    "min": [
+      -0.02001499943435192,
+      -0.0006600000197067857,
+      -0.02001499943435192
+    ],
+    "max": [
+      0.02001499943435192,
+      0.0032629999332129955,
+      0.02001499943435192
+    ]
+  },
+  "limitations": [
+    "Not yet integrated into website",
+    "No exact socket collision/fit verification",
+    "Image-derived dimensions and visual contact pattern"
+  ]
+}

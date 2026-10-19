@@ -1,0 +1,16 @@
+{
+  "socket": "AM5",
+  "construction_footprint_mm": [
+    40,
+    40
+  ],
+  "substrate_thickness_mm": 1.1,
+  "thermal_top_z_mm": 3.25,
+  "contact_bottom_z_mm": -0.66,
+  "visual_contact_count": 1696,
+  "contact_pattern": "approximation, not an electrical pin map",
+  "triangles": 62900,
+  "mesh_objects": 16,
+  "gltf_axes": "+X right, -Z top, +Y lid",
+  "glb_bytes": 3091428
+}

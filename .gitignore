@@ -1,0 +1,27 @@
+# Node.js dependencies and Vite output
+node_modules/
+/web/dist/
+.vite/
+
+# Local server data and environment configuration
+/server/storage/
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs and test coverage
+*.log
+coverage/
+
+# Blender rollback copies and automatic backups (keep .blend and .glb)
+/.asset-backups/
+*.blend[0-9]*
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
+._*

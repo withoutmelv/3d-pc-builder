@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/EL4CTEO/blender-skills",
+  "commit": "71d031dab8bc6729504d11a78cbe91945401045f",
+  "scope": "project",
+  "destination": ".agents/skills",
+  "skill_count": 22,
+  "installed": "2026-10-19"
+}

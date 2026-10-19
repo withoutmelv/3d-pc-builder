@@ -1,0 +1,55 @@
+{
+  "model": "GIGABYTE RTX 4090 AERO OC 24G",
+  "created": "2026-09-20",
+  "workflow": "Blender 5.2 + local blender-mcp execute_blender_code",
+  "upstream_commit": "6f992ffbca3cb715d111fc640b737b808632273c",
+  "units": "metres",
+  "blender_bounds_mm": [
+    [
+      -173.3249969482422,
+      -78.0,
+      -38.19999694824219
+    ],
+    [
+      168.5,
+      76.00000762939453,
+      36.20000076293945
+    ]
+  ],
+  "mesh_count": 45,
+  "triangles": 13968,
+  "glb_bytes": 561896,
+  "groups": [
+    "ROOT",
+    "Heatsink",
+    "PCB",
+    "Shroud",
+    "Backplate",
+    "IO_Bracket",
+    "Power_16pin",
+    "Shroud_Cell_1",
+    "Fan_1",
+    "Fan_1_Rotor",
+    "Shroud_Cell_2",
+    "Fan_2",
+    "Fan_2_Rotor",
+    "Shroud_Cell_3",
+    "Fan_3",
+    "Fan_3_Rotor",
+    "ANCHOR_pcie",
+    "HDMI",
+    "DisplayPort_1",
+    "DisplayPort_2",
+    "DisplayPort_3",
+    "Socket16",
+    "ANCHOR_gpu_power",
+    "ANCHOR_io_fixing"
+  ],
+  "notes": [
+    "Official envelope: 342 × 150 × 75 mm, excluding connector tabs.",
+    "Three 110 mm fans, each with separate rotor; center rotates opposite to outer fans.",
+    "10 visual heatpipes, backplate screen opening, three DisplayPort + one HDMI, 16-pin power.",
+    "Website wind/card.png is only an animation layer; never use it alone as the complete exterior. Hidden fin routing, vent pattern, blade profiles and socket internals are approximate."
+  ],
+  "website_integrated": false
+}

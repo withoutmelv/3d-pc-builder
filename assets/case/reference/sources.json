@@ -1,0 +1,26 @@
+{
+  "id": "case",
+  "name": "06 · 机箱",
+  "model": "LIAN LI LANCOOL 216X · 黑色无光版",
+  "source": "https://lian-li.com/product/lancool-216/",
+  "status": "型号已确认；已制作首版模型",
+  "note": "已排除误收的V3000图片。黑色无光版采用双160mm前风扇、140mm后风扇；白色/RGB图仅作结构辅助。",
+  "images": [
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_136-b.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_136-c.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_136-a.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_90-a.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_93-a.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_93-b.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_5-Edit___.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_20-Edit.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/DSC4826.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/1007_142-Edit.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/216_1031-009.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/216_1031-010.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/216_1031-011.png",
+    "https://lian-li.com/wp-content/uploads/2022/11/216_1031-012.jpg",
+    "https://lian-li.com/wp-content/uploads/2022/11/216_1031-013.jpg"
+  ],
+  "excluded_wrong_model": "https://lian-li.com/wp-content/uploads/2022/11/v3000-2.jpg"
+}

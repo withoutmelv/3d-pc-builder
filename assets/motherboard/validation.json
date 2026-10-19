@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "loader": "Project Three.js GLTFLoader",
+  "singleScene": true,
+  "embeddedReferenceImages": 0,
+  "meshCount": 203,
+  "triangles": 101478,
+  "anchorCoordinatesChecked": 42,
+  "mountingBoresChecked": 9,
+  "boundsMetres": {
+    "min": [
+      -0.13600000739097595,
+      -0.00480000046081841,
+      -0.16787900030612946
+    ],
+    "max": [
+      0.12600000202655792,
+      0.04455000162124634,
+      0.15320874185999855
+    ]
+  },
+  "glbBytes": 5495532,
+  "limitations": [
+    "No browser frame-rate test",
+    "No website interaction binding",
+    "Reference-derived geometry, not manufacturer CAD"
+  ]
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "id": "case-air",
+    "category": "case",
+    "name": "LIAN LI LANCOOL 216X",
+    "brand": "LIAN LI",
+    "description": "LIAN LI LANCOOL 216X 参考建模。",
+    "price": null,
+    "specs": {
+      "formFactors": ["ATX", "mATX", "Mini-ITX", "E-ATX"],
+      "maxGpuLength": 392,
+      "maxCoolerHeight": 180.5,
+      "psuFormFactors": ["ATX"],
+      "maxPsuLength": 220,
+      "maxBoardWidth": 280
+    },
+    "dimensions": [235, 491.7, 480.9],
+    "modelKey": "case",
+    "color": "#d5d6d8",
+    "summary": "LANCOOL 216X / 黑色无光版"
+  },
+  {
+    "id": "board-a5",
+    "category": "motherboard",
+    "name": "ROG STRIX B850-F GAMING WIFI7 NEO",
+    "brand": "ASUS ROG",
+    "description": "ROG STRIX B850-F GAMING WIFI7 NEO 参考建模。",
+    "price": null,
+    "specs": {
+      "socket": "AM5",
+      "memoryType": "DDR5",
+      "formFactor": "ATX",
+      "storageInterfaces": ["M.2 NVMe"],
+      "chipset": "B850"
+    },
+    "dimensions": [305, 244, 8],
+    "modelKey": "motherboard",
+    "color": "#263335",
+    "summary": "AM5 / DDR5 / ATX"
+  },
+  {
+    "id": "board-a4",
+    "category": "motherboard",
+    "name": "B550 ESSENTIAL",
+    "brand": "CORE LAB",
+    "description": "AM4 平台的实用型主板。",
+    "price": 599,
+    "specs": {
+      "socket": "AM4",
+      "memoryType": "DDR4",
+      "formFactor": "mATX",
+      "storageInterfaces": ["M.2 NVMe"]
+    },
+    "dimensions": [244, 244, 8],
+    "modelKey": "motherboard",
+    "color": "#343132",
+    "summary": "AM4 / DDR4 / mATX"
+  },
+  {
+    "id": "board-large",
+    "category": "motherboard",
+    "name": "X670 EXTENDED",
+    "brand": "CORE LAB",
+    "description": "扩展版主板，用于体验机箱规格冲突。",
+    "price": 1799,
+    "specs": {
+      "socket": "AM5",
+      "memoryType": "DDR5",
+      "formFactor": "E-ATX",
+      "storageInterfaces": ["M.2 NVMe"]
+    },
+    "dimensions": [305, 330, 8],
+    "modelKey": "motherboard",
+    "color": "#292c36",
+    "summary": "AM5 / DDR5 / E-ATX"
+  },
+  {
+    "id": "cpu-a5",
+    "category": "cpu",
+    "name": "AMD Ryzen 7 9800X3D",
+    "brand": "AMD",
+    "description": "AMD Ryzen 7 9800X3D 参考建模。",
+    "price": null,
+    "specs": {
+      "socket": "AM5",
+      "cores": 8
+    },
+    "dimensions": [40, 40, 3.92],
+    "modelKey": "cpu",
+    "color": "#b8bcc0",
+    "summary": "AM5 / Ryzen 7 / 9800X3D"
+  },
+  {
+    "id": "cpu-a4",
+    "category": "cpu",
+    "name": "R5 6 核处理器 · AM4",
+    "brand": "CORE LAB",
+    "description": "用于 AM4 平台的演示处理器。",
+    "price": 699,
+    "specs": {
+      "socket": "AM4",
+      "cores": 6
+    },
+    "dimensions": [40, 40, 5],
+    "modelKey": "cpu",
+    "color": "#b8bcc0",
+    "summary": "AM4 / 6 核"
+  },
+  {
+    "id": "cooler-air",
+    "category": "cooler",
+    "name": "Thermalright Phantom Spirit 120 SE",
+    "brand": "Thermalright",
+    "description": "Thermalright Phantom Spirit 120 SE 参考建模。",
+    "price": null,
+    "specs": {
+      "height": 154,
+      "sockets": ["AM4", "AM5"]
+    },
+    "dimensions": [125, 154, 110],
+    "modelKey": "cooler",
+    "color": "#a6aaae",
+    "summary": "双塔 / 双风扇 / 120 SE"
+  },
+  {
+    "id": "cooler-tall",
+    "category": "cooler",
+    "name": "BREEZE XL 180",
+    "brand": "演示品牌",
+    "description": "高塔散热结构，用于体验高度冲突。",
+    "price": 399,
+    "specs": {
+      "height": 180
+    },
+    "dimensions": [130, 180, 95],
+    "modelKey": "cooler",
+    "color": "#81858b",
+    "summary": "塔式风冷 / 高度 180mm"
+  },
+  {
+    "id": "ram-d5",
+    "category": "memory",
+    "name": "CORSAIR VENGEANCE RGB DDR5",
+    "brand": "CORSAIR",
+    "description": "CORSAIR VENGEANCE RGB DDR5 参考建模。",
+    "price": null,
+    "specs": {
+      "memoryType": "DDR5",
+      "capacity": "32GB (2 × 16GB)"
+    },
+    "dimensions": [135, 44, 8],
+    "modelKey": "memory",
+    "color": "#bac5cc",
+    "summary": "DDR5 / RGB / 双条套装"
+  },
+  {
+    "id": "ram-d4",
+    "category": "memory",
+    "name": "LUMA DDR4 16GB",
+    "brand": "CORE LAB",
+    "description": "两根 8GB 内存组成的 DDR4 套装。",
+    "price": 249,
+    "specs": {
+      "memoryType": "DDR4",
+      "capacity": "16GB (2 × 8GB)"
+    },
+    "dimensions": [133, 35, 8],
+    "modelKey": "memory",
+    "color": "#444a51",
+    "summary": "DDR4 / 16GB / 双条套装"
+  },
+  {
+    "id": "gpu-dual",
+    "category": "gpu",
+    "name": "GIGABYTE RTX 4090 AERO OC 24G",
+    "brand": "GIGABYTE",
+    "description": "GIGABYTE RTX 4090 AERO OC 24G 参考建模。",
+    "price": null,
+    "specs": {
+      "length": 342,
+      "vram": "24GB"
+    },
+    "dimensions": [342, 75, 150],
+    "modelKey": "gpu",
+    "color": "#b8bdc4",
+    "summary": "RTX 4090 / 24GB / 三风扇"
+  },
+  {
+    "id": "gpu-triple",
+    "category": "gpu",
+    "name": "ARC TRIPLE 16G",
+    "brand": "演示品牌",
+    "description": "加长三风扇设计，观察不同尺寸的安装效果。",
+    "price": 4699,
+    "specs": {
+      "length": 325,
+      "vram": "16GB"
+    },
+    "dimensions": [325, 60, 125],
+    "modelKey": "gpu",
+    "color": "#424b56",
+    "summary": "16GB / 三风扇 / 325mm"
+  },
+  {
+    "id": "gpu-xl",
+    "category": "gpu",
+    "name": "ARC XL 24G",
+    "brand": "演示品牌",
+    "description": "超长显卡，用于体验机箱限长冲突。",
+    "price": 6999,
+    "specs": {
+      "length": 370,
+      "vram": "24GB"
+    },
+    "dimensions": [370, 70, 135],
+    "modelKey": "gpu",
+    "color": "#757c83",
+    "summary": "24GB / 三风扇 / 370mm"
+  },
+  {
+    "id": "ssd-1",
+    "category": "storage",
+    "name": "Samsung 990 EVO 1TB",
+    "brand": "SAMSUNG",
+    "description": "Samsung 990 EVO 1TB 参考建模。",
+    "price": null,
+    "specs": {
+      "capacity": "1TB",
+      "interface": "M.2 NVMe"
+    },
+    "dimensions": [80, 22, 2.38],
+    "modelKey": "storage",
+    "color": "#3e464d",
+    "summary": "990 EVO / 1TB / M.2 NVMe"
+  },
+  {
+    "id": "ssd-2",
+    "category": "storage",
+    "name": "FLASH M.2 2TB",
+    "brand": "CORE LAB",
+    "description": "更大容量的 M.2 固态硬盘。",
+    "price": 699,
+    "specs": {
+      "capacity": "2TB",
+      "interface": "M.2 NVMe"
+    },
+    "dimensions": [80, 22, 7],
+    "modelKey": "storage",
+    "color": "#858a90",
+    "summary": "2TB / M.2 NVMe"
+  },
+  {
+    "id": "psu-750",
+    "category": "psu",
+    "name": "CORSAIR RM1000x (2024)",
+    "brand": "CORSAIR",
+    "description": "CORSAIR RM1000x (2024) 参考建模。",
+    "price": null,
+    "specs": {
+      "wattage": 1000,
+      "formFactor": "ATX"
+    },
+    "dimensions": [150, 86, 160],
+    "modelKey": "psu",
+    "color": "#282d34",
+    "summary": "RM1000x / 2024 / 全模组"
+  },
+  {
+    "id": "psu-850",
+    "category": "psu",
+    "name": "POWER 850 全模组",
+    "brand": "演示品牌",
+    "description": "850W 演示电源，未进行供电兼容性校验。",
+    "price": 649,
+    "specs": {
+      "wattage": 850,
+      "formFactor": "ATX"
+    },
+    "dimensions": [150, 86, 160],
+    "modelKey": "psu",
+    "color": "#b0b5bb",
+    "summary": "850W / 全模组"
+  }
+]

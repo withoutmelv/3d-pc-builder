@@ -1,0 +1,10 @@
+{
+  "source": "/Users/withoutmelv/Downloads/【装机教程】全网最好的装机教程，没有之一 - Original.mp4",
+  "audio_duration_seconds": 4604.1173125,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "language": "zh",
+  "chunk_seconds": 300,
+  "segment_count": 1739,
+  "method": "Local MLX Whisper; automatic transcript, not manually verbatim-corrected",
+  "review": "Re-decoded chunks 13 and 15 without initial prompt; corrected missing negation near 50:00 using context-spanning re-decode; not verbatim human-corrected."
+}

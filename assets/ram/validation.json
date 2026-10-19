@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "loader": "Three.js GLTFLoader",
+  "meshes": 18,
+  "triangles": 7121,
+  "fans": 0,
+  "independentRotors": 0,
+  "anchors": [
+    "ram_ANCHOR_dimm_seat"
+  ],
+  "clips": 0,
+  "slotCovers": 0,
+  "sizeMetres": [
+    0.13500000536441803,
+    0.007999999914318323,
+    0.04399999976158142
+  ],
+  "keyGeometryRaycast": true,
+  "noExternalTextures": true,
+  "websitePerformanceTested": false,
+  "blendReopened": true,
+  "blendStandardDocument": true
+}

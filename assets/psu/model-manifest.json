@@ -1,0 +1,62 @@
+{
+  "model": "CORSAIR RM1000x 2024",
+  "created": "2026-09-20",
+  "workflow": "Blender 5.2 + local blender-mcp execute_blender_code",
+  "upstream_commit": "6f992ffbca3cb715d111fc640b737b808632273c",
+  "units": "metres",
+  "blender_bounds_mm": [
+    [
+      -75.15000915527344,
+      -83.76000213623047,
+      -43.0
+    ],
+    [
+      75.15000915527344,
+      84.6500015258789,
+      43.53499984741211
+    ]
+  ],
+  "mesh_count": 53,
+  "triangles": 38173,
+  "glb_bytes": 1936628,
+  "groups": [
+    "ROOT",
+    "Housing",
+    "Fan_Grille",
+    "AC_Panel",
+    "Modular_Panel",
+    "Fan_140",
+    "Fan_140_Rotor",
+    "AC_Inlet",
+    "Power_Switch",
+    "Fan_Override",
+    "MB_18pin",
+    "ANCHOR_MB_18pin",
+    "MB_10pin",
+    "ANCHOR_MB_10pin",
+    "CPU_PCIE_1",
+    "ANCHOR_CPU_PCIE_1",
+    "CPU_PCIE_2",
+    "ANCHOR_CPU_PCIE_2",
+    "CPU_PCIE_3",
+    "ANCHOR_CPU_PCIE_3",
+    "SATA_1",
+    "ANCHOR_SATA_1",
+    "SATA_2",
+    "ANCHOR_SATA_2",
+    "SATA_3",
+    "ANCHOR_SATA_3",
+    "12V2x6",
+    "ANCHOR_12V2x6",
+    "Side_Label_-1",
+    "Side_Label_1",
+    "ANCHOR_psu_mount"
+  ],
+  "notes": [
+    "Official housing 160 × 150 × 86 mm; 140 mm fan; 2024 conventional rear modular version, not SHIFT.",
+    "AC inlet, rocker switch and manual fan knob are separate groups.",
+    "Vent pattern and socket internal key positions are visual approximations, not an electrical wiring diagram.",
+    "Loose power cables are not included in this asset; assembly connector anchors are provided."
+  ],
+  "website_integrated": false
+}

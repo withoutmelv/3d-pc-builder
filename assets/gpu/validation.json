@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "loader": "Three.js GLTFLoader",
+  "meshes": 45,
+  "triangles": 13968,
+  "fans": 3,
+  "independentRotors": 3,
+  "anchors": [
+    "gpu_ANCHOR_gpu_power",
+    "gpu_ANCHOR_io_fixing",
+    "gpu_ANCHOR_pcie"
+  ],
+  "clips": 0,
+  "slotCovers": 0,
+  "sizeMetres": [
+    0.34182501040171226,
+    0.07439999934285879,
+    0.15400000530009528
+  ],
+  "keyGeometryRaycast": true,
+  "noExternalTextures": true,
+  "websitePerformanceTested": false,
+  "blendReopened": true,
+  "blendStandardDocument": true
+}

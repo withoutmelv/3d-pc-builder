@@ -1,0 +1,20 @@
+{
+  "id": "gpu",
+  "name": "02 · 显卡",
+  "model": "GIGABYTE RTX 4090 AERO OC 24G · 银白色",
+  "source": "https://www.gigabyte.com/Graphics-Card/GV-N4090AERO-OC-24GD",
+  "status": "型号已确认；已制作首版模型",
+  "note": "以完整三风扇产品为准；wind/card.png 已从整卡参考图移除。官方尺寸342×150×75mm，3×DP、1×HDMI、16pin供电。部分图片服务器返回403，未声称逐张核对过不可访问的图片。",
+  "images": [
+    "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2338/innergigabyteimages/plate.jpg",
+    "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2338/innergigabyteimages/pwr.jpg",
+    "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2338/innergigabyteimages/kft2.png",
+    "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2338/innergigabyteimages/kft1.png"
+  ],
+  "excluded_as_complete_reference": [
+    {
+      "url": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2338/innergigabyteimages/wind/card.png",
+      "reason": "官网动画分层素材，不能单独代表完整风扇面。完整产品为三个110mm风扇。"
+    }
+  ]
+}

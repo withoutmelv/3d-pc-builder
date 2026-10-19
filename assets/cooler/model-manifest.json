@@ -1,0 +1,56 @@
+{
+  "model": "Thermalright Phantom Spirit 120 SE",
+  "created": "2026-09-20",
+  "workflow": "Blender 5.2 + local blender-mcp execute_blender_code",
+  "upstream_commit": "6f992ffbca3cb715d111fc640b737b808632273c",
+  "units": "metres",
+  "blender_bounds_mm": [
+    [
+      -69.6500015258789,
+      -81.35000610351562,
+      -0.22499999403953552
+    ],
+    [
+      80.5,
+      55.0,
+      154.0
+    ]
+  ],
+  "mesh_count": 38,
+  "triangles": 19828,
+  "glb_bytes": 829148,
+  "groups": [
+    "ROOT",
+    "Heatsink",
+    "Coldplate",
+    "Crossbar",
+    "Protective_Film",
+    "Fan_1",
+    "Fan_1_Rotor",
+    "Wire_Clip_1_L",
+    "Wire_Clip_1_R",
+    "PWM_Cable_1",
+    "Fan_2",
+    "Fan_2_Rotor",
+    "Wire_Clip_2_L",
+    "Wire_Clip_2_R",
+    "PWM_Cable_2",
+    "AM5_Rail_-1",
+    "Spacer_-1_-27",
+    "Spacer_-1_27",
+    "Spring_Screw_-1",
+    "AM5_Rail_1",
+    "Spacer_1_-27",
+    "Spacer_1_27",
+    "Spring_Screw_1",
+    "ANCHOR_thermal_contact",
+    "ANCHOR_airflow"
+  ],
+  "notes": [
+    "Heatsink 125 W × 110 D × 154 H mm; two 120 × 120 × 25 fans extend depth.",
+    "Seven 6 mm heatpipes. Fans mounted vertically at front and between towers, both blowing toward +Y.",
+    "Four individual bent wire clips, AM5 rails/spacers, spring screws, removable coldplate film and PWM leads.",
+    "Bracket hole locations and clip bends reconstructed from photos; not a manufacturing fit drawing."
+  ],
+  "website_integrated": false
+}

@@ -1,0 +1,657 @@
+/* The builder is a full-screen scene. Panels are temporary tools over the stage. */
+.immersive.app-shell {
+  position: relative;
+  height: 100dvh;
+  min-height: 480px;
+  overflow: hidden;
+  background: #0d1118;
+}
+.immersive .workspace {
+  position: absolute;
+  inset: 0;
+  display: block;
+  min-height: 0;
+}
+.immersive .scene-panel {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: radial-gradient(ellipse at 50% 55%, #233148, #0d1118 72%);
+}
+.immersive .scene-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, #080c1470, transparent 22%, transparent 76%, #080c1480);
+}
+.immersive .viewport {
+  inset: 0;
+}
+.immersive .topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 76px;
+  padding: 0 32px;
+  border: 0;
+  background: transparent;
+  z-index: 5;
+  pointer-events: none;
+}
+.immersive .topbar::after {
+  content: '';
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #9db4d821, transparent);
+}
+.immersive .topbar nav {
+  pointer-events: auto;
+  gap: 8px;
+}
+.immersive .brand {
+  font-size: 19px;
+  letter-spacing: 1.7px;
+}
+.immersive .brand-mark {
+  color: #a9c8f7;
+}
+.immersive .workspace-label {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #6a788c;
+}
+.immersive .top-divider {
+  height: 16px;
+  background: #63748e30;
+}
+.immersive .topbar .primary {
+  padding: 9px 15px;
+  background: #e2ebf8;
+  border-color: #d6e4f6;
+  color: #19283d;
+  font-size: 11px;
+}
+.immersive .topbar .primary:hover {
+  background: white;
+}
+.immersive .topbar nav > button:not(.primary) {
+  font-size: 11px;
+  color: #95a5bc;
+}
+.immersive .projectbar {
+  position: absolute;
+  top: 112px;
+  left: 34px;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.immersive .eyebrow {
+  color: #6f829e;
+  font-size: 9px;
+  letter-spacing: 2.8px;
+}
+.immersive .project-name {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 12px;
+}
+.immersive .project-name input {
+  pointer-events: auto;
+  font-size: 23px;
+  font-weight: 400;
+  width: 290px;
+  max-width: 29vw;
+  letter-spacing: -0.4px;
+  text-shadow: 0 2px 15px #0008;
+}
+.immersive .save-indicator {
+  color: #687d99;
+  font-size: 9px;
+}
+.immersive .parts-toggle {
+  pointer-events: auto;
+  padding: 10px 12px;
+  border: 1px solid #637a9a40;
+  background: #141f3080;
+  backdrop-filter: blur(14px);
+  color: #b5c7df;
+  font-size: 11px;
+  border-radius: 6px;
+  gap: 10px;
+}
+.immersive .parts-toggle > span {
+  color: #6f87a8;
+  font-size: 10px;
+  margin-left: 14px;
+}
+.immersive .parts-toggle[aria-expanded='true'] {
+  border-color: #8badde88;
+  background: #273b5670;
+}
+.immersive .parts-sidebar,
+.immersive .inspector {
+  position: absolute;
+  z-index: 6;
+  border: 1px solid #637c9a40;
+  background: #111c2be8;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 16px 60px #0003;
+  border-radius: 12px;
+  animation: panel-in 0.22s ease-out;
+}
+.immersive .parts-sidebar {
+  top: 260px;
+  left: 32px;
+  width: 262px;
+  height: auto;
+  max-height: calc(100% - 370px);
+}
+.immersive .section-heading {
+  height: 48px;
+  padding: 0 18px;
+  border-bottom: 1px solid #7693b81c;
+  gap: 12px;
+}
+.immersive .section-heading > span {
+  margin-left: auto;
+}
+.immersive .section-heading .icon-button {
+  margin-right: -8px;
+}
+.immersive .part-row {
+  min-height: 61px;
+  padding: 10px 12px;
+  border-bottom-color: #8fb0de0d;
+}
+.immersive .part-row-info {
+  gap: 3px;
+}
+.immersive .part-row-info strong {
+  font-size: 11px;
+}
+.immersive .part-row.active {
+  background: #5081c221;
+  border-left-color: #89b9f6;
+}
+.immersive .inspector {
+  top: 108px;
+  right: 32px;
+  width: 270px;
+  max-height: calc(100% - 250px);
+  overflow: auto;
+  display: block;
+}
+.immersive .inspector-body {
+  padding: 23px 22px 20px;
+}
+.immersive .inspector h1 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.45;
+  margin-top: 12px;
+}
+.immersive .description {
+  font-size: 11px;
+  color: #8194b0;
+}
+.immersive .price-label {
+  padding: 21px 0 16px;
+  border-bottom-color: #7c9ac221;
+}
+.immersive .price-label strong {
+  font-weight: 400;
+  font-size: 24px;
+}
+.immersive .specs {
+  margin: 20px 0;
+  gap: 14px;
+}
+.immersive .model-note {
+  border-color: #7c9ac21a;
+  margin-top: 12px;
+  padding-top: 14px;
+}
+.immersive .model-note p {
+  color: #687d98;
+}
+.immersive .inspector .primary {
+  background: #7faaf0;
+  border-color: #96bcf7;
+  color: #101b2c;
+}
+.immersive .stage-caption {
+  position: absolute;
+  left: 34px;
+  bottom: 140px;
+  z-index: 1;
+  pointer-events: none;
+}
+.immersive .stage-caption > span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(42px, 5vw, 78px);
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #b0c7ed1c;
+}
+.immersive .stage-caption > p {
+  color: #7186a25c;
+  font-size: 9px;
+  letter-spacing: 4px;
+  margin-top: 3px;
+}
+.immersive .scene-side-tools {
+  top: 50%;
+  right: 33px;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #101b2a80;
+  border-color: #748fb029;
+  border-radius: 22px;
+  padding: 7px 3px;
+  gap: 8px;
+}
+.immersive .scene-side-tools button {
+  border-radius: 50%;
+  color: #91a4bd;
+  padding: 10px;
+}
+.immersive .scene-side-tools button:hover {
+  color: #e1edff;
+  background: #688ec233;
+}
+.immersive .scene-bottom {
+  bottom: 128px;
+  gap: 13px;
+  z-index: 2;
+}
+.immersive .view-switch {
+  border-color: #7d9ac126;
+  background: #111b2c85;
+  padding: 3px;
+  border-radius: 20px;
+}
+.immersive .view-switch button {
+  min-width: 48px;
+  padding: 6px 12px;
+  font-size: 10px;
+  border-radius: 16px;
+}
+.immersive .view-switch .active {
+  background: #a2bbdf20;
+  color: #cfe0fa;
+}
+.immersive .orbit-hint {
+  color: #8197b3;
+  font-size: 9px;
+}
+.immersive .orbit-hint span {
+  margin: 0 8px;
+  color: #455974;
+}
+.immersive .component-dock {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  padding: 8px;
+  gap: 4px;
+  border-radius: 16px;
+  border: 1px solid #93afd62e;
+  background: linear-gradient(135deg, #27384a88, #101c2ed9);
+  box-shadow:
+    0 12px 40px #0005,
+    inset 0 1px 0 #b8d7ff0d;
+  backdrop-filter: blur(22px);
+}
+.immersive .component-dock button {
+  position: relative;
+  width: 55px;
+  padding: 8px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 9px;
+  color: #9aacc5;
+}
+.immersive .component-dock button > span {
+  font-size: 9px;
+}
+.immersive .component-dock button i {
+  position: absolute;
+  bottom: 4px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #53667f;
+}
+.immersive .component-dock button i.installed {
+  background: #a5c3ed;
+}
+.immersive .component-dock button:hover {
+  background: #89b3ec16;
+  color: #e7f1ff;
+  transform: translateY(-3px);
+}
+.immersive .component-dock button.active {
+  background: #82a8dd24;
+  color: #dbeaff;
+}
+.immersive .statusbar {
+  position: absolute;
+  bottom: 30px;
+  left: 32px;
+  right: 32px;
+  height: 66px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  z-index: 3;
+  pointer-events: none;
+}
+.immersive .statusbar button {
+  pointer-events: auto;
+}
+.immersive .compat-status {
+  gap: 9px;
+  color: #799f96;
+}
+.immersive .compat-status > span {
+  font-size: 10px;
+  min-width: 0;
+  color: #9caec6;
+}
+.immersive .compat-status small {
+  font-size: 9px;
+  color: #637c9b;
+}
+.immersive .compat-status > svg:last-child {
+  display: none;
+}
+.immersive .status-price {
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 195px;
+  justify-content: flex-end;
+}
+.immersive .status-price > span {
+  font-size: 9px;
+  color: #7185a0;
+}
+.immersive .status-price > span > small {
+  display: none;
+}
+.immersive .status-price > strong {
+  font-size: 27px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+  color: #d8e4f5;
+}
+.immersive .export-button {
+  border: 0;
+  padding: 0;
+  font-size: 9px;
+  color: #7187a5;
+  gap: 6px;
+  flex-basis: 100%;
+  justify-content: flex-end;
+}
+.immersive .export-button svg {
+  width: 12px;
+}
+.immersive .empty-scene {
+  z-index: 2;
+  top: 40%;
+}
+.immersive .toast {
+  bottom: 186px;
+}
+.immersive .dialog::backdrop {
+  background: #03091380;
+  backdrop-filter: blur(3px);
+}
+.immersive .dialog.wide {
+  margin: 90px 24px 24px auto;
+  width: 490px;
+  max-height: calc(100dvh - 114px);
+  background: #152133f2;
+}
+.immersive .full-state {
+  position: absolute;
+  inset: 76px 0 0;
+  background: #0e1521;
+}
+.immersive.zen .projectbar,
+.immersive.zen .statusbar,
+.immersive.zen .component-dock,
+.immersive.zen .stage-caption,
+.immersive.zen .scene-bottom,
+.immersive.zen .scene-side-tools,
+.immersive.zen .parts-sidebar,
+.immersive.zen .inspector {
+  display: none;
+}
+.immersive.zen .topbar > *:not(nav),
+.immersive.zen .topbar::after,
+.immersive.zen .topbar nav > button:not(.zen-toggle) {
+  display: none;
+}
+.immersive.zen .zen-toggle {
+  background: #14223780;
+  border: 1px solid #7599cb30;
+  backdrop-filter: blur(12px);
+}
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    translate: 0 10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@media (max-width: 1100px) {
+  .immersive .workspace-label,
+  .immersive .top-divider {
+    display: none;
+  }
+  .immersive .component-dock button {
+    width: 45px;
+  }
+  .immersive .component-dock {
+    gap: 2px;
+  }
+  .immersive .status-price {
+    width: 155px;
+  }
+  .immersive .status-price > strong {
+    font-size: 23px;
+  }
+  .immersive .project-name input {
+    font-size: 20px;
+    width: 250px;
+  }
+  .immersive .stage-caption > span {
+    font-size: 52px;
+  }
+}
+@media (max-width: 760px) {
+  .immersive .topbar {
+    height: 65px;
+    padding: 0 18px;
+  }
+  .immersive .brand {
+    font-size: 16px;
+  }
+  .immersive .topbar nav {
+    gap: 0;
+  }
+  .immersive .topbar nav > button:not(.primary) {
+    font-size: 0;
+    gap: 0;
+    padding: 9px;
+  }
+  .immersive .topbar .primary {
+    font-size: 0;
+    gap: 0;
+    padding: 9px;
+  }
+  .immersive .topbar .zen-toggle {
+    font-size: 0;
+  }
+  .immersive .topbar::after {
+    left: 18px;
+    right: 18px;
+  }
+  .immersive .projectbar {
+    top: 94px;
+    left: 20px;
+    gap: 18px;
+  }
+  .immersive .project-name {
+    gap: 8px;
+  }
+  .immersive .project-name input {
+    max-width: 80vw;
+    width: 260px;
+    font-size: 21px;
+  }
+  .immersive .parts-toggle {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  .immersive .parts-sidebar {
+    top: 225px;
+    left: 20px;
+    max-height: calc(100% - 420px);
+    width: 260px;
+  }
+  .immersive .parts-sidebar .section-heading {
+    display: flex;
+  }
+  .immersive .parts-list {
+    display: block;
+    overflow-y: auto;
+  }
+  .immersive .part-row {
+    width: 100%;
+    min-width: 0;
+    text-align: left;
+    border-left: 2px solid transparent;
+  }
+  .immersive .part-row-info strong {
+    max-width: none;
+  }
+  .immersive .part-row .part-icon,
+  .immersive .part-row .row-chevron {
+    display: block;
+  }
+  .immersive .part-row.active {
+    border-left-color: #89b9f6;
+  }
+  .immersive .inspector {
+    top: 155px;
+    right: 18px;
+    width: min(290px, calc(100vw - 36px));
+    max-height: calc(100% - 335px);
+  }
+  .immersive .inspector-body {
+    padding: 18px;
+  }
+  .immersive .stage-caption {
+    display: none;
+  }
+  .immersive .scene-side-tools {
+    right: 16px;
+  }
+  .immersive .scene-bottom {
+    bottom: 187px;
+  }
+  .immersive .component-dock {
+    bottom: 86px;
+    max-width: calc(100% - 32px);
+    padding: 6px;
+    gap: 0;
+    width: max-content;
+  }
+  .immersive .component-dock button {
+    width: 43px;
+    gap: 7px;
+    padding: 8px 0 12px;
+  }
+  .immersive .component-dock button > svg {
+    width: 18px;
+  }
+  .immersive .component-dock button > span {
+    font-size: 9px;
+  }
+  .immersive .statusbar {
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    height: 54px;
+  }
+  .immersive .status-price {
+    width: 155px;
+    gap: 7px;
+  }
+  .immersive .status-price > span {
+    display: inline;
+  }
+  .immersive .export-button {
+    font-size: 9px;
+  }
+  .immersive .dialog.wide {
+    margin: 70px auto 15px;
+    width: calc(100vw - 30px);
+    max-height: calc(100dvh - 85px);
+  }
+  .immersive .toast {
+    bottom: 230px;
+  }
+}
+@media (max-width: 380px) {
+  .immersive .component-dock button {
+    width: 37px;
+  }
+  .immersive .topbar {
+    padding: 0 12px;
+  }
+  .immersive .brand {
+    font-size: 14px;
+  }
+}
+@media (max-height: 650px) and (min-width: 761px) {
+  .immersive .projectbar {
+    top: 93px;
+    gap: 15px;
+  }
+  .immersive .parts-sidebar {
+    top: 220px;
+    max-height: calc(100% - 325px);
+  }
+  .immersive .scene-bottom {
+    bottom: 115px;
+  }
+  .immersive .inspector {
+    top: 90px;
+    max-height: calc(100% - 200px);
+  }
+}
